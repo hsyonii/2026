@@ -52,9 +52,41 @@
     <ul><!--ul(unorder list): 순서가 없는 목록(번호 없이 나열)-->
         <li>항목1</li>
         <li>항목2</li>
-    </ul> <!--하이퍼 링크-->
+    </ul>
+
+    <!--하이퍼 링크-->
     <a href="https://youtu.be/_4_Jz7mPW4M?si=vqn5hjh9ElyxG_-t"> [파김치갱] EP.01 </a>
+    <br/>
     <a href="exam1.html">'exam1'html 이동 </a>
+    <br/>
     <a href="tel:010-1234-1234"> 모바일에서 이 번호로 바로 전화걸기 </a>
+    <br/>
+
+    <!--이미지 마크업-->
+    <img src = "무한도전.png" />
+    <!--
+    <img src = "./무한도전.png" />
+    <img src = "../무한도전.png" /> -->
+
+    <!-- 상대경로
+     ./: 현재폴더에서
+     ../: 상위폴더로 이동
+     ../../: 상위폴더로 2번 이동
+     -->
+
+     <!-- 절대경로: 파일의 전체 경로(주소) 로컬 or 서버
+    <img src = C:\2026\day2\무한도전.png/>
+    <img src = "https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA1MjZfMTY1%2FMDAxNjIyMDM2MzEyNzAy.03y9L2T8FZtUACWMXeKQtgr6xmLtFPF4MxXi5dKcB-kg.zWjMmN8MRAjhYhEvBMW7jWEZ5UxfAJWs45FAzaSC3gog.JPEG.itiio1619dl%2Foutput_138339272.jpg&type=sc960_832" />
+     -->
+    <br/>
+    <audio src="삼바라틴.mp3" controls > </audio> <!--controls:오디오 재생 바-->
+    <video src="펭귄.mp4" controls > </video>
+    <!--autoplay(자동재생)은 브라우저 정책상 불가능, 단 음소거는 가능-->
+    
+    <br/><!--유튜브 영상 퍼오기-->
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/feyYvvM-Qio?si=ezt6VPVOXyl9sZ3C" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <br/>
+    <!--구글 지도로 위치 퍼오기-->
+    <iframe src="https://www.google.com/maps/embed?pb=!1m5!3m3!1m2!1s0x357b67371a7ab1f5%3A0xe5dfe92f43832e74!2z7JeE66eI64-I6rWt7IiY!5e0!3m2!1sko!2skr!4v1783415037136!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
 </body>
 </html> <!--html끝-->

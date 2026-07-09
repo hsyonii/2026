@@ -1,0 +1,1 @@
+let answer = confirm("전문 시청팀 입니까?")
