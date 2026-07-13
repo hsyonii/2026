@@ -1,0 +1,61 @@
+h5 {color: yellow;}
+/* 선택자(마크업) { 속성명(ex- color): 속성값}
+선택자 종류
+1. *: 와일드 카드 (전체에 적용)
+우선순위: * < 마크업 지정 속성 < 클래스 < #id < html인라인
+2. .className : 클래스 지정
+*/
+*{color: palevioletred;}
+h6 {color: skyblue;}
+
+/*클래스 속성 지정*/
+.class1 { color : yellowgreen} /*복수 식별*/
+#id1 {color: purple;} /*단일 식별*/
+#id1 {color: tomato;} /*아래에 적용한 속성이 유효*/
+/* 자식선택자) 상위선택자> 자식선택자 */
+div> h3 {color: black;}
+
+/*복수 선택자*/
+h3, h4{color: gray;}
+
+/*자손선택) 상위선택자 자식 (띄어쓰기) */
+div li{background-color: lemonchiffon;}
+/* = */
+html > body > div > ol > li > h3{color: black;}
+
+/*누구를{무엇을: 어떻게;}*/
+.title{
+    font-family: 'HsJandari'; /*폰트 지정*/
+    font-size: 50px; /* 크기 */
+    font-style: oblique; /* 기울기 */
+    font-weight: bolder; /*글자 굵기*/
+}
+
+/*웹폰트 코드 복붙*/
+@font-face {
+    font-family: 'HsJandari';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2510-2@1.0/HSJandari.woff2') format('woff2');
+    font-weight: bolder;
+    font-display: swap;
+}
+
+.본문{
+    color: black;
+    font-family: 'HsJandari';
+    font-size: 20px;
+    word-spacing: 5px; /*단어간격(어간)*/
+    /* letter-spacing: 2px; 자간*/
+    line-height: 110%; /*줄간격*/
+}
+
+.출처{
+    font-family: 'HsJandari';
+    font-size: 15px;
+    text-align: center; /*텍스트 (가로)중앙정렬, left, right*/
+    text-decoration: underline;/*underline: 밑줄, overline:윗줄, line-through:취소선*/
+    text-shadow: 3px 5px 3px gray;/* x축 y축 투명도 색상 */
+    /*색상 표현 방법*/
+    color: green;/*색상명*/
+    color: rgba(0,255,0,0.9);/*rgb(색상명)+a(투명도)*/
+    color: #008000;
+}
