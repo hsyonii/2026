@@ -1,0 +1,99 @@
+/*전체 레이아웃 확인(추후제거)*/
+*{
+    border: solid 2px aqua;
+}
+
+*{
+    box-sizing: border-box; /*content+padding 포함 사이즈 정의*/
+    padding:0px;
+    margin:0 auto;
+}
+
+a{
+    text-decoration: none; /* a하이퍼링크 밑줄 제거 */
+    color: black; /* a하이퍼링크 색상 검정 */
+}
+
+/*li 글머리 제거*/
+li{ list-style-type: none; }
+
+#header{
+    width:1280px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /*하위요소 양끝정렬*/
+}
+
+#main{
+    width:1280px;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#main_img{
+    width:1280px;
+    height: 200px;
+    text-align: center;
+}
+
+
+#logo{
+    width: 100px;
+}
+
+#logo>img{
+    width:100%
+}
+
+#main_img>img{
+    width: 1280px;
+    height: 200px;
+}
+
+#side_bar{
+    width: 200px;
+}
+
+#img_box{
+    width: 100px;
+}
+
+#img_box>img{
+    width:100%
+}
+
+.user_menu{
+    display: flex;
+    font-size: 10px;
+}
+
+.main_menu{
+    display: flex;
+    font-weight: bolder;
+}
+
+#member{
+    background-color: gray;
+    color: white;
+}
+
+#footer{
+    display: flex;
+    background-color: #000000;
+}
+
+#footer_logo{
+    width: 100px;
+}
+
+#footer_logo>img{
+    width: 100%;
+}
+
+#footer_text{
+    font-size: 8px;
+    color: white;
+}

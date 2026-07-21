@@ -1,0 +1,58 @@
+*{
+    border: solid 1px aqua;
+}
+
+#wrap{
+    width: 1280px; /*웹표준 가로크기*/
+    margin:0 auto; /*외부여백 위아래0 좌우auto(중앙)*/
+}
+
+#header{
+    height: 100px;
+}
+
+#main{
+    display: flex; /*하위요소 가로로 배치*/
+    flex-wrap: nowrap; /*하위요소들이 상위요소보다 커지면 크기 자동맞춤*/
+    justify-content: space-between;/*하위요소 양끝으로 균등정렬*/
+}
+
+#content{
+    width: 840px;
+    height: 500px;
+}
+
+#sidebar{
+    width: 420px;
+    height: 500px;
+}
+
+#footer{
+    height: 50px;
+}
+/*height는 주로 직접 지정X*/
+
+.px{
+    width:200px;
+    font-size: 16px;
+    background-color: lemonchiffon;
+}
+
+.percent{
+    width:50%; /*부모요소의 50%*/
+    font-size: 16px;
+    background-color: pink;
+}
+
+/*rem:부모요소와 상관없이 html뿌리요소 비례하는 상대값*/
+.rem{
+    font-size:1.5rem; /*html루트 폰트크기(16px)*1.5=24px*/
+}
+
+/*부모요소와 상관없이 디바이스(브라우저)에 비례하는 상대값*/
+.vh{
+    width:60vh;
+}
+.vw{
+    width:30vw;
+}
