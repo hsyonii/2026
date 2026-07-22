@@ -11,6 +11,7 @@ function 등록버튼(){
     목록.push(객체)
     //console.log(목록)
 
+    //버튼 누를때마다 전체출력
     let html=`<tr><td>날짜</td><td>항목</td><td>금액</td></tr>`
     for(let i=0; i<=목록.length-1; i++){
         html += `<tr><td>${목록[i].날짜}</td><td>${목록[i].항목}</td><td>${목록[i].금액}</td></tr>`
