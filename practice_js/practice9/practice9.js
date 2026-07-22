@@ -106,16 +106,18 @@ function vacationAdd(){
             break
         }
     }
+    let vcode = finalvcode + 1
     //휴가시작-끝 날짜 가져오기
     let vstart = document.querySelector('.vacation_start').value
     let vend = document.querySelector('.vacation_end').value
     //휴가사유 가져오기
     let vreason = document.querySelector('.vacation_reason').value
     //vationList 에 추가
-    let vacationSub={mcode,vstart,vend,vreason}
+    let vacationSub={mcode,vcode,vstart,vend,vreason}
     vacationList.push(vacationSub)
     //출력
     showVaction()
+
 }
 
 
